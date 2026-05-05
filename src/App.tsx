@@ -4,6 +4,7 @@ import Home from './views/Home'
 import Cart from './views/Cart'
 import Category from './views/Category'
 import NavBar from './shared/components/navbar/NavBar'
+import Footer from './shared/components/footer/Footer'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Route path='/:categoryName' element={<Category />} />
         <Route path='/cart' element={<Cart />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
