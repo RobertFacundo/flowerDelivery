@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# 🌸 Flower Delivery eCommerce (WIP)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern eCommerce frontend inspired by a [FIGMA Design](https://www.figma.com/design/VQhl13ZO6tUHf2R8JQtzzx/eCommerce---Flower-Delivery-website-%7C-UI---UX-%7C-Ui-kit-%7C-Template--Community-?node-id=158-1021&t=pmJ99V5vSHboTv1P-0), focused on building a clean, responsive, and component-driven user interface for a flower delivery service.
 
-Currently, two official plugins are available:
+> 🚧 **Work in Progress** — This project is currently under active development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🧠 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The goal of this project is to practice and demonstrate real-world frontend development skills by translating a UI/UX design into a functional React application.
 
-## Expanding the ESLint configuration
+It focuses on:
+- Component architecture
+- Layout systems (Flexbox & CSS Grid)
+- Dynamic rendering
+- Routing and navigation
+- Scalable and maintainable code structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚙️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **React** — UI library
+- **React Router** — Client-side routing
+- **Tailwind CSS** — Utility-first styling
+- **CSS Grid & Flexbox** — Layout systems
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Features (Planned / In Progress)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🏠 Home page (Hero + Categories)
+- 📂 Category view
+- 📄 Product detail page
+- 🛒 Shopping cart system
+- 🔄 Dynamic rendering with reusable components
+- 📱 Responsive design
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🧩 Current Focus
+
+- Building the Home layout using CSS Grid
+- Implementing zig-zag category sections
+- Matching Figma design structure and spacing
+- Handling layout edge cases (borders, alignment, responsiveness)
+
+---
+## 📬 Contact
+
+Feel free to reach out if you want to collaborate, have any questions, or just connect.
+
+- 📧 Email: robertf.coder@gmail.com  
+- 💼 LinkedIn: [https://www.linkedin.com/in/robertfacundodev/](https://www.linkedin.com/in/robertfacundodev/)  
+- 🌐 Portfolio: [https://facundorobert.vercel.app/](https://facundorobert.vercel.app/)  
+- 💻 GitHub: [https://github.com/RobertFacundo](https://github.com/RobertFacundo)
+
