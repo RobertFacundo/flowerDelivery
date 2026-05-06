@@ -5,7 +5,7 @@ import AboutUs from "./AboutUs";
 
 const Footer = () => {
     return (
-        <div className="grid grid-cols-4 mx-auto ">
+        <div className="grid md:grid-cols-4 mx-auto ">
             <Subcribe />
             <Contact />
             <Shop />

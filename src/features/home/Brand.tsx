@@ -13,9 +13,9 @@ const Brand = () => {
                 </p>
             </div>
             <div className='flex flex-row gap-8 p-4 '>
-                <img src={hero} alt="" className='w-[280px]' />
+                <img src={hero} alt="" className='md:w-[280px] w-[155px]' />
                 <div className='border-l flex items-end justify-bottom'>
-                    <p className='pl-5'>Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.</p>
+                    <p className='pl-5 md:text-l text-sm'>Experience the joy of giving with our modern floral studio. Order online and send fresh flowers, plants and gifts today.</p>
                 </div>
             </div>
         </div>

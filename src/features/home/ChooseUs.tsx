@@ -12,7 +12,7 @@ const responses: responseType[] = [
 
 const ChooseUs = () => {
     return (
-        <div className="grid grid-cols-2 ">
+        <div className="grid md:grid-cols-2">
             <div className=" p-15 font-semibold text-4xl">
                 <h1>Why Choose us?</h1>
             </div>

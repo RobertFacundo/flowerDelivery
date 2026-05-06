@@ -2,10 +2,10 @@ const categories = ["All Products", "Fresh Flowers", "Dried Flowers", "Live Plan
 
 const Shop = () => {
     return (
-        <div className="p-12 border-r">
-            <h1>Shop</h1>
+        <div className=" flex flex-col p-12 border-r border-t md:border-t-0 gap-1">
+            <h1 className="text-2xl text-gray-500">Shop</h1>
             {categories.map(cat => (
-                <p>{cat}</p>
+                <p key={cat} className="p-1">{cat}</p>
             ))}
         </div>
     )

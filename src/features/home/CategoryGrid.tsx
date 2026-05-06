@@ -10,7 +10,7 @@ const CategoryGrid = () => {
                 return (
                     <div
                         key={cat.title}
-                        className={`col-start-2 flex ${isEven ? 'flex-row' : 'flex-row-reverse'} `}
+                        className={`md:col-start-2 flex ${isEven ? 'flex-row' : 'flex-row-reverse'} `}
                     >
                         <img
                             src={cat.img}
@@ -24,8 +24,8 @@ const CategoryGrid = () => {
                                 {cat.title}
                             </p>
 
-                            <Link to={`/${cat.title}`} className="self-center pb-5">
-                                Shop now
+                            <Link to={`/category/${cat.title.toLowerCase().replace(" ", "-")}`} className="self-center pb-5 font-semibold">
+                                {isEven ? "←" : ""} {" "} Shop now {" "} {isEven ? "" : "→"}
                             </Link>
 
                         </div>
