@@ -1,17 +1,32 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../shared/data";
+import { useAppDispatch } from "../shared/redux/hooks";
+import { addToCart } from "../shared/redux/slices/cartSlice";
 
 const slugify = (text: string) =>
     text.toLowerCase().replaceAll(" ", "-");
 
 const Product = () => {
+    const [added, setAdded] = useState(false);
     const { productName } = useParams();
+    const dispatch = useAppDispatch();
 
     const product = products.find(
         (p) => slugify(p.title) === productName
     );
 
     if (!product) return <p>Product not found</p>
+
+    const handleAddToCart = () => {
+        dispatch(addToCart(product));
+
+        setAdded(true);
+
+        setTimeout(() => {
+            setAdded(false)
+        }, 1500)
+    }
 
     return (
         <div className="grid md:grid-cols-2 border-b">
@@ -30,8 +45,14 @@ const Product = () => {
                     <p className="text-gray-600">{product.description}</p>
                 </div>
 
-                <button className="px-8 py-4 bg-black text-white hover:bg-gray-800 transition">
-                    Add to basket
+                <button
+                    onClick={handleAddToCart}
+                    className={`
+    px-8 py-4 text-white transition cursor-pointer
+    ${added ? 'bg-green-700' : 'bg-black hover:bg-black/90'}
+`}
+                >
+                    {added ? "Added ✓" : "Add to basket"}
                 </button>
 
             </div>
