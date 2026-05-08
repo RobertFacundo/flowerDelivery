@@ -6,8 +6,11 @@ import Category from './views/Category'
 import NavBar from './shared/components/navbar/NavBar'
 import Footer from './shared/components/footer/Footer'
 import Product from './views/Product'
+import { useLenis } from './shared/hooks/useLenis'
 
 function App() {
+
+  useLenis();
 
   return (
     <Router>

@@ -1,3 +1,10 @@
+import { useRef, useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 type responseType = {
     title: string;
     p: string;
@@ -11,14 +18,45 @@ const responses: responseType[] = [
 ]
 
 const ChooseUs = () => {
+    const root = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: root.current,
+                    start: "top 50%",
+                    toggleActions: "play reverse play reverse",
+                },
+            });
+
+            // Animamos el título principal
+            tl.from(".choose-title", {
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+            });
+
+            // Animamos cada tarjeta de respuesta
+            tl.from(".choose-card", {
+                opacity: 0,
+                y: 50,
+                stagger: 0.2,
+                duration: 1.8,
+            }, "-=0.5");
+
+        }, root);
+
+        return () => ctx.revert();
+    }, []);
     return (
-        <div className="grid md:grid-cols-2">
-            <div className=" p-15 font-semibold text-4xl">
+        <div ref={root} className="grid md:grid-cols-2">
+            <div className="choose-title p-15 font-semibold text-4xl">
                 <h1>Why Choose us?</h1>
             </div>
             <div className="flex flex-col">
                 {responses.map((response) => (
-                    <div key={response.title} className="flex flex-col p-12 gap-3 border-l border-b">
+                    <div key={response.title} className="choose-card flex flex-col p-12 gap-3 border-l border-b">
                         <h3 className="text-3xl">{response.title}</h3>
                         <p>{response.p}</p>
                     </div>
