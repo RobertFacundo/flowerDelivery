@@ -23,7 +23,7 @@ const CartItems = ({ items }: Props) => {
             {items.map(item => (
                 <div
                     key={item.id}
-                    className="grid grid-cols-[140px_1fr] gap-6 p-6 border-b"
+                    className="cart-item grid grid-cols-[140px_1fr] gap-6 p-6 border-b"
                 >
                     <img
                         src={item.img}

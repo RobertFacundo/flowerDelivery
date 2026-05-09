@@ -1,41 +1,49 @@
-# 🌸 Flower Delivery eCommerce (WIP)
+# 🌸 Flower Delivery eCommerce
 
-This project is a modern eCommerce frontend inspired by a [FIGMA Design](https://www.figma.com/design/VQhl13ZO6tUHf2R8JQtzzx/eCommerce---Flower-Delivery-website-%7C-UI---UX-%7C-Ui-kit-%7C-Template--Community-?node-id=158-1021&t=pmJ99V5vSHboTv1P-0), focused on building a clean, responsive, and component-driven user interface for a flower delivery service.
-
-> 🚧 **Work in Progress** — This project is currently under active development.
+A modern and animated eCommerce frontend inspired by a [FIGMA Design](https://www.figma.com/design/VQhl13ZO6tUHf2R8JQtzzx/eCommerce---Flower-Delivery-website-%7C-UI---UX-%7C-Ui-kit-%7C-Template--Community-?node-id=158-1021&t=pmJ99V5vSHboTv1P-0), focused on building a clean, responsive, and component-driven user experience for a flower delivery service.
 
 ---
 
 ## 🧠 About the Project
 
-The goal of this project is to practice and demonstrate real-world frontend development skills by translating a UI/UX design into a functional React application.
+This project was built to practice and demonstrate modern frontend development concepts by translating a professional UI/UX design into a fully functional React application.
 
-It focuses on:
+The application focuses on:
 - Component architecture
-- Layout systems (Flexbox & CSS Grid)
+- Responsive layouts
 - Dynamic rendering
-- Routing and navigation
-- Scalable and maintainable code structure
+- Smooth scrolling experiences
+- Scroll-based animations
+- Global state management
+- Scalable frontend structure
 
 ---
 
 ## ⚙️ Tech Stack
 
 - **React** — UI library
+- **TypeScript** — Static typing
 - **React Router** — Client-side routing
+- **Redux Toolkit** — Global cart state management
 - **Tailwind CSS** — Utility-first styling
-- **CSS Grid & Flexbox** — Layout systems
+- **GSAP** — Advanced animations and timelines
+- **ScrollTrigger** — Scroll-based animation system
+- **Lenis** — Smooth scrolling experience
 
 ---
 
 ## 📁 Features (Planned / In Progress)
 
-- 🏠 Home page (Hero + Categories)
-- 📂 Category view
-- 📄 Product detail page
-- 🛒 Shopping cart system
+- 🏠 Responsive Home page
+- 📂 Dynamic category pages
+- 📄 Product detail pages
+- 🛒 Shopping cart functionality
+- ➕ Quantity management
+- ❌ Remove items from cart
 - 🔄 Dynamic rendering with reusable components
-- 📱 Responsive design
+- 🎬 GSAP scroll-based animations
+- 🌊 Smooth scrolling with Lenis
+- 📱 Fully responsive layout
 
 ---
 
