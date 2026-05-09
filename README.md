@@ -47,12 +47,32 @@ The application focuses on:
 
 ---
 
-## 🧩 Current Focus
+## 🎞️ Animations & Motion
 
-- Building the Home layout using CSS Grid
-- Implementing zig-zag category sections
-- Matching Figma design structure and spacing
-- Handling layout edge cases (borders, alignment, responsiveness)
+This project includes cinematic-inspired UI animations using GSAP and ScrollTrigger.
+
+Features include:
+- Scroll-triggered reveal animations
+- Timeline-based motion sequences
+- Reversible animations on scroll
+- Staggered product animations
+- Smooth scrolling integration using Lenis
+- Component-scoped GSAP contexts for React compatibility
+
+The goal was to explore modern motion design patterns commonly used in interactive and premium frontend experiences.
+
+---
+
+## 🧩 What I Practiced
+
+- Building scalable React components
+- Managing global state with Redux Toolkit
+- Working with dynamic routes
+- Integrating GSAP with React
+- Coordinating animations using timelines
+- Combining Lenis + ScrollTrigger
+- Creating reusable UI structures
+- Translating Figma layouts into responsive interfaces
 
 ---
 ## 📬 Contact
